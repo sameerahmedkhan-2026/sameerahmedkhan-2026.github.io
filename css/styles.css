@@ -30,19 +30,29 @@ img {
   max-width: 100%;
 }
 
-.social-icons{
+.social-icons {
   display: flex;
   gap: 30px;
 }
-h2{
+h2 {
   color: var(--windsurfing);
 }
 
-.svg-icon{
+.svg-icon {
   fill: var(--windsurfing);
   width: 60px;
 }
 
-.profile{
+.profile {
   border-radius: var(--corners);
+}
+
+.wrapper {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  @media (min-width: 760px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
