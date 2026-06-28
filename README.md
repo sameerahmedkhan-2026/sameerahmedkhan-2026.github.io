@@ -1,6 +1,6 @@
 # portfolio website
 
-This is the source code for my portfolio website, which can be found at https://github.com/sameerahmedkhan-2026/sameerahmedkhan-2026.github.io and is hosted at
+This portfolio is hosted at
 https://sameerahmedkhan-2026.github.io.
 
 This website is built using HTML, CSS, and JavaScript.
