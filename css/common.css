@@ -13,6 +13,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -61,4 +62,30 @@ a {
 
 a:hover {
   color: var(--marina);
+}
+
+.site-nav {
+  width: min(100%, 1200px);
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem 1.25rem;
+  font-size: calc(var(--base-font-size) * 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.site-nav a:first-child {
+  margin-right: auto;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+@media (min-width: 760px) {
+  .site-nav {
+    justify-content: flex-start;
+  }
 }
