@@ -1,0 +1,49 @@
+/* about section styles */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.svg-icon {
+  fill: var(--windsurfing);
+  width: 36px;
+  height: 36px;
+}
+
+.svg-icon:hover {
+  fill: var(--marina);
+}
+
+.social-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.social-disabled .svg-icon {
+  fill: var(--gray);
+}
+
+.social-disabled .svg-icon:hover {
+  fill: var(--gray);
+}
+
+.profile {
+  border-radius: var(--corners);
+}
+
+@media (min-width: 760px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
