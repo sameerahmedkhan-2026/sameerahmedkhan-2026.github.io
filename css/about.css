@@ -21,11 +21,11 @@
 }
 
 .wrapper h1 {
-  max-width: 11ch;
   color: var(--charcoal);
-  font-size: clamp(3.2rem, 7vw, 6.4rem);
+  font-size: clamp(2.25rem, 5vw, 5rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
+  white-space: nowrap;
 }
 
 .wrapper p {
@@ -156,5 +156,19 @@
 
   .wrapper > div:first-child {
     padding-top: 0;
+  }
+
+  .wrapper h1 {
+    white-space: normal;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1199px) {
+  .wrapper h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  .wrapper > div:last-child {
+    margin-right: 2rem;
   }
 }
