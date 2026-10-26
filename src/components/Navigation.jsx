@@ -1,3 +1,5 @@
+import ThemeToggle from "./ThemeToggle";
+
 const navigationItems = [
   { label: "Home", href: "#home" },
   { label: "Blog", href: "#blog" },
@@ -13,6 +15,7 @@ export default function Navigation() {
           {item.label}
         </a>
       ))}
+      <ThemeToggle />
     </nav>
   );
 }

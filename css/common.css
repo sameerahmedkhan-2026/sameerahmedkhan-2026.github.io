@@ -9,6 +9,17 @@
   --charcoal: #343c47;
   --corners: 24px 0;
   --base-font-size: 1rem;
+  --page-transition: background-color 200ms ease, color 200ms ease;
+}
+
+:root[data-theme="dark"] {
+  --white: #20252d;
+  --platinum: #171b21;
+  --windsurfing: #73b9df;
+  --marina: #a0d4f1;
+  --gray: #7d8793;
+  --onyx: #e3e7ed;
+  --charcoal: #f4f6f8;
 }
 
 html {
@@ -33,6 +44,7 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--platinum);
   color: var(--onyx);
+  transition: var(--page-transition);
 }
 
 img {
@@ -84,6 +96,28 @@ a:hover {
   text-decoration: none;
 }
 
+.theme-toggle {
+  margin-left: auto;
+  border: 1px solid var(--windsurfing);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--windsurfing);
+  background: transparent;
+  font: inherit;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--marina);
+  border-color: var(--marina);
+}
+
 @media (min-width: 760px) {
   .site-nav {
     justify-content: flex-start;
@@ -98,5 +132,9 @@ a:hover {
   .site-nav {
     gap: 0.8rem 1rem;
     font-size: 0.75rem;
+  }
+
+  .theme-toggle {
+    margin-left: 0;
   }
 }
