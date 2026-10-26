@@ -56,6 +56,9 @@
 }
 
 .social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
