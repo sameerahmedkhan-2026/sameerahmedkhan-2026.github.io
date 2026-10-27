@@ -2,6 +2,17 @@ import "./Courses.css";
 
 const courses = [
   {
+    title: "Building Web Applications with AI",
+    subtitle:
+      "From prompt engineering and GitHub Copilot to GitHub Pages and AI agent workflows.",
+    description:
+      "Build and deploy a web application with GitHub Copilot in VS Code while learning how prompt engineering can support the development process. Register now and join the cohort when the batch is filled.",
+    details:
+      "This course introduces modern AI-assisted development tools and workflows, including GitHub Copilot, Claude, Codex, and agent mode. You will create a practical application, host its code on GitHub, and publish it with GitHub Pages.",
+    href: "https://forms.gle/eBnZzxeXopoZck6q8",
+    action: "Book your seat / express interest",
+  },
+  {
     title: "Introduction to web development",
     description:
       "Build a strong foundation in the core technologies behind the web: HTML, CSS, and JavaScript.",
@@ -42,13 +53,22 @@ export default function Courses() {
             </span>
             <div className="course-card-content">
               <h2>{course.title}</h2>
+              {course.subtitle && <p className="course-subtitle">{course.subtitle}</p>}
               <p>{course.description}</p>
+              {course.details && (
+                <details className="course-details">
+                  <summary>View more details</summary>
+                  <p>{course.details}</p>
+                </details>
+              )}
               {course.href ? (
                 <a href={course.href} target="_blank" rel="noreferrer">
                   {course.action} <span aria-hidden="true">↗</span>
                 </a>
               ) : (
-                <span className="course-coming-soon">{course.action}</span>
+                <a href={course.href} target="_blank" rel="noreferrer">
+                  {course.action} <span aria-hidden="true">→</span>
+                </a>
               )}
             </div>
           </article>
