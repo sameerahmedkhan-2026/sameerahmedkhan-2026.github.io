@@ -1,0 +1,26 @@
+.site-nav {
+  width: min(100%, 1200px);
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem 1.25rem;
+  font-size: calc(var(--base-font-size) * 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.site-nav a:first-child {
+  margin-right: auto;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+@media (max-width: 759px) {
+  .site-nav {
+    gap: 0.8rem 1rem;
+    font-size: 0.75rem;
+  }
+}

@@ -1,5 +1,5 @@
 .courses-page {
-  width: min(100%, 1000px);
+  width: min(100%, 1200px);
   margin: clamp(2.5rem, 8vw, 6rem) auto;
 }
 

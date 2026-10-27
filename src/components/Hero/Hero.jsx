@@ -1,4 +1,5 @@
-import SocialLinks from "./SocialLinks";
+import SocialLinks from "../SocialLinks/SocialLinks";
+import "./Hero.css";
 
 export default function Hero() {
   return (

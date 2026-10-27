@@ -1,5 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import "./Navigation.css";
 
 const navigationItems = [
   { label: "Home", to: "/", type: "route" },

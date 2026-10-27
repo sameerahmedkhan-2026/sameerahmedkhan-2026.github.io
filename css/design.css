@@ -1,0 +1,28 @@
+:root {
+  --white: #f9faff;
+  --platinum: #e3e4e8;
+  --windsurfing: #32779b;
+  --marina: #5a91c7;
+  --gray: #9a9a9a;
+  --onyx: #3c3d44;
+  --charcoal: #343c47;
+  --corners: 24px 0;
+  --base-font-size: 1rem;
+  --page-transition: background-color 200ms ease, color 200ms ease;
+}
+
+:root[data-theme="dark"] {
+  --white: #20252d;
+  --platinum: #171b21;
+  --windsurfing: #73b9df;
+  --marina: #a0d4f1;
+  --gray: #7d8793;
+  --onyx: #e3e7ed;
+  --charcoal: #f4f6f8;
+}
+
+@media (min-width: 750px) {
+  :root {
+    --base-font-size: 1.125rem;
+  }
+}

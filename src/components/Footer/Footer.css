@@ -35,57 +35,7 @@ footer {
   line-height: 2;
 }
 
-.icons {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 2rem;
-}
-
-ul svg {
-  width: 36px;
-  height: 36px;
-}
-
-.social {
-  fill: var(--windsurfing);
-}
-
-.social:hover {
-  fill: var(--marina);
-}
-
-.social-disabled {
-  display: inline-flex;
-  opacity: 0.45;
-  cursor: not-allowed;
-}
-
-.social-disabled .social {
-  fill: var(--gray);
-}
-
-.social-disabled .social:hover {
-  fill: var(--gray);
-}
-
-.footer-text .social {
-  fill: var(--onyx);
-}
-
-.footer-text .social:hover {
-  fill: var(--marina);
-}
-
 @media (min-width: 750px) {
-  :root {
-    --base-font-size: 1.125rem;
-  }
-
   footer {
     text-align: left;
   }
@@ -96,6 +46,5 @@ ul svg {
 
   .footer-text .icons {
     grid-column: 1 / 4;
-    justify-content: flex-start;
   }
 }

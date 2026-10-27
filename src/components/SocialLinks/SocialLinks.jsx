@@ -1,4 +1,5 @@
-import SocialIcon from "./SocialIcon";
+import SocialIcon from "../SocialIcon/SocialIcon";
+import "./SocialLinks.css";
 
 const links = [
   { name: "twitter", href: "#", label: "Twitter/X", disabled: true },

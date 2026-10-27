@@ -1,0 +1,27 @@
+.theme-toggle {
+  margin-left: auto;
+  border: 1px solid var(--windsurfing);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--windsurfing);
+  background: transparent;
+  font: inherit;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--marina);
+  border-color: var(--marina);
+}
+
+@media (max-width: 759px) {
+  .theme-toggle {
+    margin-left: 0;
+  }
+}

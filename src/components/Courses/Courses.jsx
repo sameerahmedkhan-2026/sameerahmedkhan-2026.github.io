@@ -1,3 +1,5 @@
+import "./Courses.css";
+
 const courses = [
   {
     title: "Introduction to web development",

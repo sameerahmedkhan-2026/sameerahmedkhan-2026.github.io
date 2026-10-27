@@ -1,0 +1,64 @@
+.social-icons,
+.icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.social-icons {
+  justify-content: flex-start;
+}
+
+.icons {
+  justify-content: center;
+}
+
+.svg-icon,
+.social {
+  width: 36px;
+  height: 36px;
+}
+
+.svg-icon,
+.social {
+  fill: var(--windsurfing);
+}
+
+.svg-icon:hover,
+.social:hover {
+  fill: var(--marina);
+}
+
+.social-disabled {
+  display: inline-flex;
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.social-disabled .svg-icon,
+.social-disabled .social {
+  fill: var(--gray);
+}
+
+.social-disabled .svg-icon:hover,
+.social-disabled .social:hover {
+  fill: var(--gray);
+}
+
+.footer-text .social {
+  fill: var(--onyx);
+}
+
+.footer-text .social:hover {
+  fill: var(--marina);
+}
+
+@media (min-width: 750px) {
+  .icons {
+    justify-content: flex-start;
+  }
+}
