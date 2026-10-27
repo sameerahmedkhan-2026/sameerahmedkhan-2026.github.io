@@ -6,7 +6,7 @@ const navigationItems = [
   { label: "Home", to: "/", type: "route" },
   { label: "Blog", section: "blog", type: "section" },
   { label: "Courses", to: "/courses", type: "route" },
-  { label: "Contact", section: "contact", type: "section" },
+  { label: "Contact", to: "/contact", type: "route" },
 ];
 
 export default function Navigation() {
